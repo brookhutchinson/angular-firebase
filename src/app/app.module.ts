@@ -8,6 +8,7 @@ import { AngularFireAuthModule }     from 'angularfire2/auth';
 
 // components
 import { AppComponent }              from './app.component';
+import { NavbarComponent }           from './components/navbar/navbar.component';
 
 // environment
 import { environment }               from './../environments/environment';
@@ -16,7 +17,7 @@ import { environment }               from './../environments/environment';
   // modules
   imports: [ BrowserModule, HttpClientModule, AngularFireModule.initializeApp(environment.firebase), AngularFireDatabaseModule, AngularFireAuthModule ],
   // components
-  declarations: [ AppComponent ],
+  declarations: [ AppComponent, NavbarComponent ],
   // services
   providers: [],
   // bootstrap

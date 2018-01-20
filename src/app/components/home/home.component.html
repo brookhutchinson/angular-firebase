@@ -1,3 +1,11 @@
 <div class="container">
-  <p>This is the HomeComponent!</p>
+  <h4>Course List</h4>
+  <!-- loop through each course inside courses -->
+  <div class="alert alert-secondary" *ngFor="let course of courses | async">
+    <h4><a href="{{ course.url }}" target="_blank">{{ course.title }}</a></h4>
+    <p>{{ course.description }}</p>
+    <div>
+      <a class="btn btn-dark" href="{{ course.url }}" target="_blank">Go to Course</a>
+    </div><!-- /go to course button -->
+  </div><!-- /course -->
 </div><!-- /.container -->
